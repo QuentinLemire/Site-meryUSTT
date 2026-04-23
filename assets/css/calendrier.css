@@ -1,0 +1,178 @@
+:root {
+    --bleu: #0033a0;
+    --jaune: #ffcc00;
+    --gris-clair: #f0f0f0;
+    --blanc: #ffffff;
+    --noir: #1a1a1a;
+    --fond-evenement-autre: #d9f99d;
+    --fond-evenement-reunion: #99ccff;
+}
+
+.jours-semaine {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    color: var(--bleu);
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+
+.jour.aujourd-hui {
+    border: 2px solid red;
+}
+
+.evenement.sportif {
+    background-color: var(--jaune);
+}
+
+.evenement.réunion {
+    background-color: var(--fond-evenement-reunion);
+}
+
+.evenement.autre {
+    background-color: var(--fond-evenement-autre);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: var(--blanc);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--bleu);
+    margin-bottom: 20px;
+}
+
+#mois-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#mois-navigation button {
+    background-color: var(--bleu);
+    color: var(--blanc);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#mois-navigation button:hover {
+    background-color: #00257a;
+}
+
+#calendrier {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.jour {
+    background-color: var(--blanc);
+    border: 1px solid #ccc;
+    min-height: 120px;
+    padding: 6px;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.jour .numero {
+    font-weight: bold;
+    color: var(--bleu);
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.evenement {
+    font-size: 0.8em;
+    padding: 4px 6px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    background-color: var(--jaune);
+    color: var(--noir);
+    word-break: break-word;
+}
+
+.evenement.sportif {
+    background-color: var(--jaune);
+}
+
+.evenement.réunion {
+    background-color: var(--fond-evenement-reunion);
+}
+
+.evenement.autre {
+    background-color: var(--fond-evenement-autre);
+}
+
+#form-evenement {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.form-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+
+.form-popup {
+    position: relative;
+    background: var(--blanc);
+    padding: 20px;
+    z-index: 1001;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.form-popup h3 {
+    margin-top: 0;
+    color: var(--bleu);
+}
+
+.form-popup input,
+.form-popup textarea,
+.form-popup select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-popup button {
+    padding: 8px 12px;
+    border: none;
+    background: var(--bleu);
+    color: var(--blanc);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.form-popup button:hover {
+    background: #00257a;
+}

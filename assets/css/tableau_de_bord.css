@@ -1,0 +1,99 @@
+.container {
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style pour les graphiques */
+canvas {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* Table des ventes récentes */
+#sales-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#sales-table th, #sales-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#sales-table th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#sales-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Liste des produits populaires et des alertes de stock faible */
+#popular-products-list, #low-stock-products {
+    margin-top: 20px;
+}
+
+#popular-products-list ul, #low-stock-products ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#popular-products-list li, #low-stock-products li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+#popular-products-list li:hover, #low-stock-products li:hover {
+    background-color: #f9f9f9;
+}
+
+/* Section des alertes de stock faible */
+#low-stock-products li {
+    background-color: #ffe6e6;  /* Rouge clair pour les produits en stock faible */
+    color: #d9534f;
+    font-weight: bold;
+}
+
+#low-stock-products li:hover {
+    background-color: #f7dada;
+}
+
+/* Style pour le graphique des rapports de vente */
+#performanceChart {
+    margin-top: 40px;
+}

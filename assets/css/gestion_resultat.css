@@ -1,0 +1,266 @@
+.poules-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.page{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.poule-box {
+    background: #002A4D;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.poule-box:hover {
+    transform: scale(1.05);
+}
+
+.poule-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.poule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.poule-table th, .poule-table td {
+    padding: 10px;
+    border: 1px solid #FFD700;
+    text-align: center;
+    color: white;
+}
+
+.poule-table th {
+    background-color: #FFD700;
+    color: #003366;
+    font-weight: bold;
+}
+
+.poule-table tr:nth-child(even) {
+    background-color: #0056b3;
+}
+
+.poule-table tr:nth-child(odd) {
+    background-color: #002A4D;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 500px;
+    max-height: 90vh;
+    overflow: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+#listeJoueurs {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#listeJoueurs label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 500px;
+    max-height: 90vh;
+    overflow: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+#listeJoueurs {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#listeJoueurs label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+#searchJoueur {
+    width: 50%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#searchJoueur:focus {
+    border-color: #003399;
+    box-shadow: 0 0 0 3px rgba(0, 51, 153, 0.2);
+    outline: none;
+}
+
+#rencontres-container {
+    background: #002A4D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    width: 90%;
+    margin: 20px auto;
+    color: white;
+    display: none;
+}
+
+#rencontres-container h2 {
+    color: #FFD700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.rencontre-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.rencontre-table th, .rencontre-table td {
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.rencontre-table th {
+    background-color: #003366;
+    color: #FFD700;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.rencontre-table tr:nth-child(odd) {
+    background-color: #002A4D;
+}
+
+.score-input {
+    width: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background: white;
+    color: #002A4D;
+    margin: 0 5px;
+}
+
+.enregistrer-score {
+    background: #FFD700;
+    color: #002A4D;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enregistrer-score:hover {
+    background: #FFA500;
+}
+
+#btnRetour {
+    background: #FFD700;
+    color: #002A4D;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+#btnRetour:hover {
+    background: #FFA500;
+}

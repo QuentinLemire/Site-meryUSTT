@@ -1,0 +1,27 @@
+{
+    "joueurs": [
+        {
+            "id_joueur": 1,
+            "prenom": "Jean",
+            "nom": "Dupont",
+            "sexe": "Homme"
+        },
+        {
+            "id_joueur": 2,
+            "prenom": "Quentin",
+            "nom": "LEMIRE",
+            "sexe": "Homme"
+        },
+        {
+            "id_joueur": 3,
+            "prenom": "Melanie",
+            "nom": "PRATS",
+            "sexe": "Femme"
+        }
+    ],
+    "stats": {
+        "total": 3,
+        "hommes": 2,
+        "femmes": 1
+    }
+}

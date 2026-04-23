@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Produits / Stocks - Mery US TT</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/gestion_produits.css">
+    <script src="../assets/js/page.js"></script>
+    <script src="../assets/js/gestion_produits.js" defer></script>
+    <script src="../assets/js/gestion_stocks.js" defer></script>
+
+</head>
+<body> 
+
+<div class="total">
+    <div class="Logo-section">
+        <a href="accueil.html">
+            <img src="../pages/image/MeryBlanc.png" alt="Logo club">
+        </a>
+    </div>
+
+    <div class="container">
+        <h2>🛒 Gestion des Produits et Stocks</h2>
+
+        <!-- Onglets de navigation -->
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="afficherOnglet('produits')">📦 Produits</button>
+            <button class="tab-btn" onclick="afficherOnglet('stocks')">📊 Stocks</button>
+        </div>
+
+        <!-- Section Produits -->
+        <div id="produits-content" class="tab-content">
+
+            <!-- Bouton Ajouter un Produit -->
+            <button onclick="ouvrirFormulaireProduit()">➕ Ajouter un Produit</button>
+
+            <h3>📦 Liste des Produits</h3>
+
+            <!-- Conteneur des produits triés par catégorie et sous-catégorie -->
+            <div id="produits-container"></div>
+            <div id="pagination-produits" class="pagination"></div>
+        </div>
+
+        <!-- Section Gestion des Stocks -->
+<div id="stocks-content" class="tab-content" style="display: none;">
+    <h3>📦 Gestion des Stocks</h3>
+    <div class="stocks">
+    <!-- 📦 Tableau des stocks (vitrine, non modifiable directement) -->
+    <h4>📊 Stocks existants</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Tailles / Quantités</th>
+            </tr>
+        </thead>
+        <tbody id="liste-stocks">
+            <!-- Les stocks existants seront affichés ici -->
+        </tbody>
+    </table>
+    </div>
+    
+    <h3>📋 Liste des Produits</h3>
+    <input type="text" id="search-produits" placeholder="🔍 Rechercher un produit..." onkeyup="filtrerProduits()">
+    <div class="table-scroll">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Catégorie</th>
+                <th>Sous-Catégorie</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="liste-produits">
+            <!-- Produits chargés dynamiquement -->
+        </tbody>
+    </table>
+    </div>
+    <h3>🛒 Ajouter / Ajuster un Stock</h3>
+    <div id="produit-selectionne">
+        <strong>Produit sélectionné :</strong> Aucun
+    </div>
+    <input type="hidden" id="id_produit_stock">
+    
+    <label for="taille-stock">Taille :</label>
+    <input type="text" id="taille-stock" placeholder="Taille">
+    
+    <label for="quantite-stock">Quantité :</label>
+    <input type="number" id="quantite-stock" placeholder="Quantité" min="0">
+    
+    <button id="ajouter-stock">➕ Ajouter</button>
+    <button id="soustraire-stock">➖ Soustraire</button>
+</div>
+        <!-- Formulaire d'ajout/modification d'un produit -->
+        <div id="form-produit" style="display: none;">
+            <h3 id="form-title">➕ Ajouter un Produit</h3>
+            <form id="produitForm" enctype="multipart/form-data">
+
+                <input type="hidden" id="id_produit" name="id_produit">
+
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="prix">Prix (€) :</label>
+                    <input type="number" id="prix" name="prix" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="images">Images :</label>
+                    <input type="file" id="images" name="images[]" accept="image/*" multiple>
+                </div>
+
+                <div id="image-preview">
+                    <!-- Ici s'afficheront les images existantes -->
+                </div>
+
+                <div class="form-group">
+                    <label for="categorie">Catégorie :</label>
+                    <input type="text" id="categorie" name="categorie" list="categories">
+                    <datalist id="categories">
+                    </datalist>
+                </div>
+
+                <div class="form-group">
+                    <label for="sous_categorie">Sous-catégorie :</label>
+                    <input type="text" id="sous_categorie" name="sous_categorie" list="sous_categories">
+                    <datalist id="sous_categories">
+                    </datalist>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">✅ Valider</button>
+                    <button type="button" onclick="fermerFormulaireProduit()">❌ Annuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

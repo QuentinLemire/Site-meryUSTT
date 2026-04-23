@@ -1,0 +1,263 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+    background-color: #003366;
+}
+
+.ma-div-blanche {
+    height: 70px;
+    background-color: white;
+}
+
+/* Barre de navigation */
+.top-bar {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    margin-top: -70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #003366;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #FFD700;
+}
+
+/* Icônes sociales et utilisateur */
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 15px;
+}
+
+.social-icons img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Section de bienvenue */
+.welcome-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #003366;
+    color: white;
+}
+
+.club-name {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.club-name span {
+    color: #FFD700;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.lines {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.line {
+    width: 40px;
+    height: 5px;
+    background-color: #FFD700;
+    margin: 5px;
+}
+
+.Logo-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 20px auto; 
+}
+
+.Logo-section img {
+    max-width: 150px; 
+    height: auto; 
+
+}
+
+
+.sponsor-banner {
+    height: 130px;
+    text-align: center;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sponsor-banner img {
+    height: 80px;
+}
+
+.partner-section {
+    background-color: #002A4D;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.partner-logos img {
+    height: 50px;
+    margin: 0 50px;
+}
+
+/* Pied de page */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #003366;
+    color: white;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-left, .footer-right {
+    font-size: 14px;
+}
+
+/* Formulaire de connexion */
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 250px; /* Largeur ajustée */
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    z-index: 100;
+}
+
+.dropdown-menu input {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    font-size: 14px; 
+    background-color: #f8f9fa; 
+    transition: all 0.3s ease;
+    outline: none; 
+}
+
+.dropdown-menu input:hover, 
+.dropdown-menu input:focus {
+    border-color: #003366; 
+    background-color: white; 
+    box-shadow: 0px 3px 8px rgba(0, 51, 102, 0.2); 
+}
+/* Rendre le menu visible au survol */
+.user-menu:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #003366;
+    font-weight: bold;
+    flex: 1; 
+}
+
+.form-group input {
+    flex: 2; 
+    padding: 5px;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Bouton de connexion */
+.dropdown-menu button {
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.dropdown-menu button:hover {
+    background: #0056b3;
+}
+
+/* Lien d'inscription */
+.register-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    color: #FFD700;
+}
+

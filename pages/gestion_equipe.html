@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des équipes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/page.js"></script>
+    <script src="../assets/js/gestion_equipe.js"></script>
+    <link rel="stylesheet" href="../assets/css/gestion_equipe.css">
+    
+</head>
+<body>
+
+<div class="container">
+        
+    <!-- Section avec création d'équipe à gauche et rencontres à droite -->
+    <div class="top-section">
+        
+        <!-- Formulaire de création d'équipe -->
+        <div class="creation-equipe">
+            <h2>Créer une Équipe</h2>
+            <form id="form-creation-equipe">
+                <label for="numero_equipe">Numéro de l'équipe :</label>
+                <input type="number" id="numero_equipe" name="numero_equipe" required>
+    
+                <label for="nom_equipe">Nom de l'équipe :</label>
+                <input type="text" id="nom_equipe" name="nom_equipe" readonly required>
+    
+                <label for="championnat">Championnat :</label>
+                <select id="championnat" name="championnat" required>
+                    <option value="1">Championnat de France</option>
+                    <option value="2">Championnat de Paris</option>
+                </select>
+    
+                <label for="division">Division :</label>
+                <select id="division" name="division" required></select>
+    
+                <label for="nombre_joueurs">Nombre de joueurs :</label>
+                <input type="number" id="nombre_joueurs" name="nombre_joueurs" readonly required>
+    
+                <label for="numero_poule">Numéro de la poule :</label>
+                <select id="numero_poule" name="numero_poule" required></select>
+    
+                <button type="submit" id="btnCreerEquipe">Créer l'Équipe</button>
+            </form>
+    
+            <div id="message-equipe"></div>
+        </div>
+    
+        <!-- Création des rencontres -->
+        <div class="match-container">
+            <h2>Création des Rencontres</h2>
+            <label for="selectEquipe">Sélectionnez une équipe de Méry :</label>
+            <select id="selectEquipe">
+                <option value="">-- Chargement... --</option>
+            </select>
+            <div class="total">
+            <div class="rang">
+            <h3>Attribution des équipes et ordre des matchs</h3>
+            <table>
+                <tr><th>Rang</th><th>Nom de l'équipe</th></tr>
+                <tr><td>1</td><td><input type="text" id="team1"></td></tr>
+                <tr><td>2</td><td><input type="text" id="team2"></td></tr>
+                <tr><td>3</td><td><input type="text" id="team3"></td></tr>
+                <tr><td>4</td><td><input type="text" id="team4"></td></tr>
+                <tr><td>5</td><td><input type="text" id="team5"></td></tr>
+                <tr><td>6</td><td><input type="text" id="team6"></td></tr>
+                <tr><td>7</td><td><input type="text" id="team7"></td></tr>
+                <tr><td>8</td><td><input type="text" id="team8"></td></tr>
+            </table>
+            </div>
+            <div class="journées">
+            <h3>Dates des Journées</h3>
+            <label>Journée 1 : <input type="date" id="journee1"></label><br>
+            <label>Journée 2 : <input type="date" id="journee2"></label><br>
+            <label>Journée 3 : <input type="date" id="journee3"></label><br>
+            <label>Journée 4 : <input type="date" id="journee4"></label><br>
+            <label>Journée 5 : <input type="date" id="journee5"></label><br>
+            <label>Journée 6 : <input type="date" id="journee6"></label><br>
+            <label>Journée 7 : <input type="date" id="journee7"></label><br>
+            </div>
+        </div>
+            <button type="button" id="btnCreerRencontres">Créer les Rencontres</button>
+        </div>
+    </div>
+
+    <!-- Section des poules -->
+    <div class="poules-section">
+        <div id="poules-container">
+            <!-- Les poules seront ajoutées ici -->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

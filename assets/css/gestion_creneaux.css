@@ -1,0 +1,108 @@
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    color: #003399;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #003399;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+form#form-ajout-creneau {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+form#form-ajout-creneau label {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+form#form-ajout-creneau input,
+form#form-ajout-creneau select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+form#form-ajout-creneau button {
+    background-color: #003399;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form#form-ajout-creneau button:hover {
+    background-color: #001f73;
+}
+
+#table-creneaux {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+#table-creneaux th {
+    background-color: #003399;
+    color: white;
+    text-align: left;
+    padding: 14px;
+}
+
+#table-creneaux td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eee;
+}
+
+#table-creneaux tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#table-creneaux button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+#table-creneaux button:hover {
+    transform: scale(1.2);
+}
+
+#zone-modification {
+    background: #fff8e1;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #f1c40f;
+    font-size: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}

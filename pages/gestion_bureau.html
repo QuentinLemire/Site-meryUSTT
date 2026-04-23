@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion du Bureau – Méry US TT</title>
+    <link rel="stylesheet" href="../assets/css/gestion_bureau.css">
+    <script src="../assets/js/page.js"></script>
+    <script src="../assets/js/gestion_bureau.js"></script>
+</head>
+<body>
+
+    <div class="Logo-section">
+        <a href="accueil.html">
+            <img src="../pages/image/MeryBlanc.png" alt="Logo club">
+        </a>
+    </div>
+
+    <div class="container">
+        <h1>👥 Gestion des membres du bureau</h1>
+
+        <!-- Formulaire d'ajout -->
+        <section class="form-section">
+            <h2>➕ Ajouter un membre</h2>
+            <form id="form-ajout-bureau" enctype="multipart/form-data">
+                <label>Joueur associé au bureau :
+                    <input list="liste-joueurs" id="champ-joueur" placeholder="Tapez un nom" autocomplete="off" required>
+                    <datalist id="liste-joueurs"></datalist>
+                    <input type="hidden" name="id_joueur" id="id_joueur">
+                </label>
+                <label>Rôle :
+                    <input type="text" name="role" required>
+                </label>
+                <label>Photo :
+                    <input type="file" name="photo" accept="image/*" >
+                </label>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+
+        <!-- Zone de modification -->
+        <div id="zone-modification" style="display: none; margin-bottom: 30px;"></div>
+
+        <!-- Cartes des membres -->
+        <section>
+            <h2>📋 Membres enregistrés</h2>
+            <div class="bureau-container" id="cartes-bureau">
+                <!-- Les cartes seront injectées ici -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>

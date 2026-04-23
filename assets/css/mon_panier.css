@@ -1,0 +1,240 @@
+.page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+#panier-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+#panier-content li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+    font-size: 20px;
+}
+
+#panier-content img {
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#panier-content span {
+    font-size: 18px;
+}
+
+#panier-content button {
+    background-color: #003366;
+    color: white;
+    padding: 6px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#panier-content button:hover {
+    background-color: #0055aa;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 5px 0 5px;
+}
+
+button#vider-panier, button#valider-panier {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#vider-panier {
+    background-color: #cc0000;
+    color: white;
+}
+
+#vider-panier:hover {
+    background-color: #990000;
+}
+
+#valider-panier {
+    background-color: #007700;
+    color: white;
+}
+
+#valider-panier:hover {
+    background-color: #005500;
+}
+
+/* ----- POPUP DE PAIEMENT ----- */
+#payment-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+#payment-popup h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* Formulaire dans la popup */
+#payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#payment-form label {
+    font-weight: bold;
+    font-size: 15px;
+    color: #003366;
+}
+
+#payment-form input,
+#payment-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#payment-form input:focus,
+#payment-form select:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+.popup button[type="button"] {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup button[type="button"]:hover {
+    background-color: #0055aa;
+}
+
+/* Bouton fermer */
+.popup > button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Fermer popup */
+.popup-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----- CONFIRMATION DE COMMANDE ----- */
+#confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+
+#confirmation-popup h3 {
+    font-size: 26px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#confirmation-popup p {
+    font-size: 16px;
+    color: #003366;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#confirmation-articles-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#confirmation-articles-list li {
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+#confirmation-popup button {
+    background-color: #003366;
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#confirmation-popup button:hover {
+    background-color: #0056b3;
+}

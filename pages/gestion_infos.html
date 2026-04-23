@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des Informations Pratiques – Méry US TT</title>
+    <link rel="stylesheet" href="../assets/css/gestion_infos.css">
+    <script src="../assets/js/page.js"></script>
+    <script src="../assets/js/gestion_infos.js"></script>
+</head>
+<body>
+
+    <div class="Logo-section">
+        <a href="accueil.html">
+            <img src="../pages/image/MeryBlanc.png" alt="Logo club">
+        </a>
+    </div>
+
+    <div class="container">
+        <h1>ℹ️ Gestion des informations pratiques</h1>
+
+        <!-- 🔹 Formulaire d'ajout -->
+        <section class="form-section">
+            <h2>➕ Ajouter une information</h2>
+            <form id="form-ajout-info">
+                <label>Clé (ex : prix_licence, email, adresse) :
+                    <input type="text" name="nom_info" required>
+                </label>
+                <label>Valeur :
+                    <input type="text" name="valeur" required>
+                </label>
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+
+        <!-- 🔹 Zone de modification -->
+        <div id="zone-modification" style="display: none; margin-bottom: 30px;"></div>
+
+        <!-- 🔹 Liste des infos -->
+        <section class="table-section">
+            <h2>📋 Informations enregistrées</h2>
+            <table id="table-infos">
+                <thead>
+                    <tr>
+                        <th>Clé</th>
+                        <th>Valeur</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rempli par JS -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>

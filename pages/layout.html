@@ -1,0 +1,109 @@
+<!-- HEADER -->
+<div id="site-header">
+    <header>
+        <div class="ma-div-blanche"></div>
+
+        <div class="top-bar">
+            <div class="logo-container">
+                <a href="accueil.html">
+                    <img src="../pages/image/MeryNoir.png" alt="Logo du club">
+                </a>
+                <div class="nav-menu">
+                    <a href="accueil.html">MERY US TT</a>
+                    <a href="equipes.html">ÉQUIPES</a>
+                    <a href="calendrier.html">CALENDRIER</a>
+                    <a href="boutique.html">BOUTIQUE</a>
+                    <a href="a_propos.html">A PROPOS</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <span id="user-name" style="color: #003366; margin-right: 10px;"></span>
+                
+                <div class="user-menu">
+                    <a href="#" class="user-icon">
+                        <img src="../pages/image/utilisateur.png" alt="Utilisateur">
+                    </a>
+                    <div class="dropdown-menu">
+                        <form id="login-form">
+                            <h3>Connexion</h3>
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="password" id="password" placeholder="Mot de passe" required>
+                            <button type="submit">Se connecter</button>
+                            <p id="login-error" style="color: red; display: none;">Email ou mot de passe incorrect.</p>
+                        </form>
+                        <p id="contact-status" style="display: none; color: green; font-weight: bold;"></p>
+
+                        <a href="inscription.html" id="register-link" class="register-link">S'inscrire</a>
+
+                        <div id="user-actions" style="display: none; flex-direction: column; gap: 10px;">
+                            <button class="btn-blue" onclick="window.location.href='espace_joueur.html'">Mon Espace Joueur</button>
+                            <button class="btn-red" id="logout-link">Déconnexion</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Panier -->
+                <div class="panier-menu">
+                    <a href="panier.html" class="panier-icon">
+                        <img src="../pages/image/panier.png" alt="Panier">
+                        <span id="cart-count" class="cart-badge">0</span>  <!-- Affichage du nombre d'articles -->
+                    </a>
+
+                    <!-- Menu déroulant du panier -->
+                    <div class="dropdown-menu panier-dropdown" id="panier-dropdown">
+                        <h3>🛒 Mon Panier</h3>
+                        <ul id="cart-items">
+                            <li>Votre panier est vide.</li>
+                        </ul>
+                        <span id="total-panier">Total : 0€</span>
+                    </div>
+                </div>
+                <a href="messagerie.html" class="messagerie-icon">
+                    <img src="../pages/image/messagerie.png" alt="messagerie">
+                    <span id="total-non-lus" class="badge-header" style="display: none;"></span>
+                  </a>
+                <a href="https://www.facebook.com/share/1F1ATh7Pfj/?mibextid=wwXIfr" target="_blank">
+                    <img src="../pages/image/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/mery_us_tt?igsh=MXc1bWY3NG11aG5rMg%3D%3D&utm_source=qr" target="_blank">
+                    <img src="../pages/image/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </header>
+</div>
+
+<!-- PAGE -->
+<div id="site-content">
+    <div class="page">
+        <!-- C'est ici que le contenu spécifique de chaque page sera inséré -->
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div id="site-footer">
+    <footer>
+        <div class="sponsor-banner">
+            <p>Notre sponsor :</p>
+            <a href="https://www.sedif92.com"><img src="../pages/image/sedif.png" alt="SEDIF 92"></a>
+        </div>
+        <div class="partner-section">
+            <div class="partner-logos">
+                <a href="https://www.cd95tt.com"><img src="../pages/image/cd95tt.png" alt="CD95"></a>
+                <a href="https://www.fftt-idf.com"><img src="../pages/image/idf.png" alt="IDF"></a>
+                <a href="https://www.fftt.com"><img src="../pages/image/ffttBlanc.png" alt="FFTT"></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-left">
+                <p>Gymnase, Rue des Remises, 95540 Mery-sur-Oise</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 - Mery US TT - Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</div>

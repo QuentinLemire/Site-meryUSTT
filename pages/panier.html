@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier - Mery US TT</title>
+    <script src="../assets/js/page.js"></script>
+    <script src="../assets/js/mon_panier.js"></script>
+    <link rel="stylesheet" href="../assets/css/mon_panier.css">
+</head>
+<body>
+
+    <div class="Logo-section">
+        <a href="accueil.html">
+            <img src="../pages/image/MeryBlanc.png" alt="Logo club">
+        </a>
+    </div>
+
+<div class="page">
+
+    <h2>Mon Panier</h2>
+
+    <!-- Contenu du panier sera chargé ici -->
+    <div id="panier-content">Chargement du panier...</div>
+    
+    <!-- Bouton pour vider le panier -->
+    <button id="vider-panier" onclick="viderPanier()">🗑️ Vider le panier</button>
+    
+    <!-- Bouton pour valider la commande -->
+    <button id="valider-panier" onclick="afficherPopupPaiement()">✅ Valider le panier</button>
+
+    <!-- Pop-up pour saisir l'adresse de livraison et le moyen de paiement -->
+    <div id="payment-popup" style="display: none;" class="popup">
+        <button onclick="fermerPopup()">❌</button>
+        <h3>Valider la commande</h3>
+            <form id="payment-form">
+            <!-- Demande de l'adresse de livraison (combinaison Numéro de rue + Rue) -->
+            <label for="adresse">Adresse: <input type="text" id="adresse" name="adresse" required></label>
+
+            <label for="code_postal">Code postal: <input type="text" id="code_postal" name="code_postal" required></label>
+
+            <label for="ville">Ville: <input type="text" id="ville" name="ville" required></label>
+
+            <!-- Choisir le moyen de paiement -->
+            <label for="moyen_paiement">Choisir un moyen de paiement:
+            <select id="moyen_paiement" name="moyen_paiement" required>
+                <option value="carte">Carte bancaire</option>
+                <option value="paypal">PayPal</option>
+                <option value="virement">Virement bancaire</option>
+            </select></label>
+
+            <button type="button" onclick="validerCommande()">Valider la commande</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

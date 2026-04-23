@@ -1,0 +1,156 @@
+.total{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    width: 100%;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    width: 30%;
+    align-items: center;
+}
+
+.form-container, .stats-container {
+    background: #1c2a3a;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    width: 90%;
+}
+
+.form-container h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.form-container label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+.form-container input,
+.form-container select {
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-container button {
+    margin-top: 15px;
+    background-color: #FFD700;
+    color: black;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #FFC107;
+}
+
+.table-container {
+    max-width: 100%; 
+    max-height: 600px;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.liste-joueurs-container {
+    width: 65%;
+    flex: 2;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    max-height: 550px; 
+    overflow-x: auto; 
+}
+
+
+.table-container {
+    max-height: 400px; 
+    overflow-y: auto; 
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#table-joueurs {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    max-height: 200px;
+}
+#table-joueurs th {
+    position: sticky;
+    top: 0;
+    background-color: #FFD700;
+    color: black;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+#table-joueurs th,
+#table-joueurs td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+
+#delete-selected {
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#delete-selected:hover {
+    background-color: darkred;
+}
+
+.stats-container {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-container p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+

@@ -1,0 +1,125 @@
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.table-wrapper {
+    margin: auto;
+    max-height: 600px; 
+    max-width: 1100px;
+    overflow-y: auto;
+    margin-bottom: 25px;
+}
+
+table {
+    margin: auto;
+    max-width: 1200px;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto;
+    margin-bottom: 25px;
+}
+
+thead {
+    background-color: #003366;
+    color: #fff;
+}
+
+thead th, tbody td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e6f0ff;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:nth-child(1) {
+    background-color: #0066cc;
+    color: white;
+    margin-right: 5px;
+}
+
+button:nth-child(2) {
+    background-color: #cc0000;
+    color: white;
+}
+
+#details-commande-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+#closePopupBtn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    color: #cc0000;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+#closePopupBtn:hover {
+    color: #ff0000;
+}
+
+#details-commande img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#details-commande li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

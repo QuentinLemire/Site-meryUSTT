@@ -1,0 +1,72 @@
+Erreur : Aucune équipe de Méry sélectionnée.
+Erreur : Aucune équipe de Méry sélectionnée.
+Erreur : Aucune équipe de Méry sélectionnée.
+✅ `equipe-mery` décodé avec succès : Array
+(
+    [id_equipe] => 3
+    [nom] => Mery 1
+    [nb_joueurs] => 4
+    [id_championnat] => 1
+    [id_poule] => 1
+)
+
+Erreur : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'projetmery.evenements' doesn't exist
+✅ `equipe-mery` décodé avec succès : Array
+(
+    [id_equipe] => 3
+    [nom] => Mery 1
+    [nb_joueurs] => 4
+    [id_championnat] => 1
+    [id_poule] => 1
+)
+
+✅ `equipe-mery` décodé avec succès : Array
+(
+    [id_equipe] => 39
+    [nom] => Mery 1
+    [nb_joueurs] => 4
+    [id_championnat] => 1
+    [id_poule] => 3
+)
+
+✅ `equipe-mery` décodé avec succès : Array
+(
+    [id_equipe] => 1
+    [nom] => MERY 1
+    [nb_joueurs] => 4
+    [id_championnat] => 1
+    [id_poule] => 4
+)
+
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.
+❌ Erreur : Décodage JSON échoué pour `equipe-mery`.
+Erreur : L'équipe de Méry est invalide ou incomplète.

@@ -1,0 +1,118 @@
+.container {
+    margin: auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 8%;
+}
+
+.Inscription, .Connexion {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: white;
+    color: #003366;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+
+.Connexion {
+    width: 30%;
+    max-height: 230px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block; 
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sexe-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nom-prenom-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.nom-prenom-container input {
+    width: 48%; 
+}
+
+.date-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.date-container input {
+    width: 16%; 
+}
+
+.adresse-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.adresse-container input[name="adresse"] {
+    width: 45%;
+}
+
+.adresse-container input[name="code_postal"] {
+    width: 22%;
+}
+
+.adresse-container input[name="ville"] {
+    width: 30%;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.contact-container input {
+    width: 48%;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
