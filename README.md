@@ -10,7 +10,7 @@ Créer une plateforme complète permettant :
 - une boutique en ligne avec panier
 
 ## 🌐 Démo en ligne
-👉 meryustt.infinityfreeapp.com
+👉 https://meryustt.infinityfreeapp.com
 
 ## 🔑 Comptes de démonstration
 
